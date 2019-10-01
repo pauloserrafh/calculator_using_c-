@@ -13,4 +13,8 @@ int main(){
     else if(c=='*') cout<<a*b<<endl;
     else if(c=='/') cout<<a/b<<endl;
     else cout<<"\n invalid operation";
+    //if you want to find the logarithmic of a no.s a and b
+    cout<<"\n log of a & b :";
+    cout<<log(a)<<" "<<log(b);
+  
 }
