@@ -1,4 +1,4 @@
-#include"bits/stdc++.h"
+#include <iostream>
 using namespace std;
 
 //simple operations like addition,multiplication,subtraction and division..
@@ -8,9 +8,20 @@ int main(){
     cin>>a>>b;
     cout<<"\n what operation you want to perform:";
     cin>>c;
-    if(c=='+') cout<<a+b<<endl;
-    else if(c=='-') cout<<a-b<<endl;
-    else if(c=='*') cout<<a*b<<endl;
-    else if(c=='/') cout<<a/b<<endl;
-    else cout<<"\n invalid operation";
+    switch (c) {
+        case '+':
+            cout<<a+b<<endl;
+            break;
+        case '-':
+            cout<<a-b<<endl;
+            break;
+        case '*':
+            cout<<a*b<<endl;
+            break;
+        case '/':
+            cout<<a/b<<endl;
+            break;
+        default:
+            cout<<"\n invalid operation";
+    }
 }
